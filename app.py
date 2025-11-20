@@ -1150,17 +1150,6 @@ templates = {
     word-break: break-word;
     overflow-wrap: break-word;
 }
-body{padding:20px;}
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.logo-icon {
-    width: 32px;
-    height: 32px;
-}
     </style>
 </head>
 <body>
@@ -1707,48 +1696,6 @@ body{padding:20px;}
                 grid-template-columns: 1fr;
             }
         }
-       /* 3 LÍNEAS MÁXIMO PARA TEXTOS */
-
-/* Títulos de videos - 3 líneas */
-.video-title,
-.search-title,
-.related-title,
-.playlist-name {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    line-height: 1.3;
-    max-height: 3.9em; /* 3 líneas * 1.3 line-height */
-}
-
-/* Descripciones - 3 líneas */
-.video-description,
-.playlist-description,
-.description-text,
-.search-description {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    line-height: 1.4;
-    max-height: 4.2em; /* 3 líneas * 1.4 line-height */
-}
-
-/* Asegurar que el texto se rompa correctamente */
-.video-title,
-.search-title,
-.related-title,
-.playlist-name,
-.video-description,
-.playlist-description,
-.description-text,
-.search-description {
-    word-wrap: break-word;
-    word-break: break-word;
-    overflow-wrap: break-word;
-}
-body{padding:20px;}
     </style>
 </head>
 <body>
@@ -2191,65 +2138,11 @@ body{padding:20px;}
                 font-size: 24px;
             }
         }
-        /* 3 LÍNEAS MÁXIMO PARA TEXTOS */
-
-/* Títulos de videos - 3 líneas */
-.video-title,
-.search-title,
-.related-title,
-.playlist-name {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    line-height: 1.3;
-    max-height: 3.9em; /* 3 líneas * 1.3 line-height */
-}
-
-/* Descripciones - 3 líneas */
-.video-description,
-.playlist-description,
-.description-text,
-.search-description {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    line-height: 1.4;
-    max-height: 4.2em; /* 3 líneas * 1.4 line-height */
-}
-
-/* Asegurar que el texto se rompa correctamente */
-.video-title,
-.search-title,
-.related-title,
-.playlist-name,
-.video-description,
-.playlist-description,
-.description-text,
-.search-description {
-    word-wrap: break-word;
-    word-break: break-word;
-    overflow-wrap: break-word;
-}
-        body{padding:20px;}
-        .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.logo-icon {
-    width: 32px;
-    height: 32px;
-}
     </style>
 </head>
 <body>
     <header class="header">
-        <div class="logo">
-    <img src="{{ url_for('static', filename='favicon.ico') }}" alt="Logo" class="logo-icon" onclick='location.href="/">
-</div>
+        <a href="/" class="logo">VC7Day</a>
         
         <form class="search-bar" action="/search" method="GET">
             <input type="text" name="q" placeholder="Buscar videos...">
@@ -2701,60 +2594,7 @@ body{padding:20px;}
                 font-size: 18px;
             }
         }
-        /* ESTILOS EXCLUSIVOS PARA TEXTOS - EVITAR SCROLL HORIZONTAL */
-
-/* Títulos de videos */
-.video-title,
-.search-title,
-.related-title,
-.playlist-name {
-    word-wrap: break-word;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    line-height: 1.3;
-}
-
-/* Descripciones */
-.video-description,
-.playlist-description,
-.description-text,
-.search-description {
-    word-wrap: break-word;
-    word-break: break-word;
-    overflow-wrap: break-word;
-}
-
-/* URLs largas en administración */
-.video-url,
-.playlist-meta {
-    word-break: break-all;
-    overflow-wrap: anywhere;
-}
-
-/* Textos en botones */
-.btn {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-/* Textos en tabs */
-.tab {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-/* Textos en formularios */
-input, textarea, select {
-    word-wrap: break-word;
-    word-break: break-word;
-}
-/* 3 LÍNEAS MÁXIMO PARA TEXTOS */
+        /* 3 LÍNEAS MÁXIMO PARA TEXTOS */
 
 /* Títulos de videos - 3 líneas */
 .video-title,
@@ -2795,24 +2635,11 @@ input, textarea, select {
     word-break: break-word;
     overflow-wrap: break-word;
 }
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.logo-icon {
-    width: 32px;
-    height: 32px;
-}
-body{padding:20px;}
     </style>
 </head>
 <body>
     <header class="header">
-        <div class="logo">
-    <img src="{{ url_for('static', filename='favicon.ico') }}" alt="Logo" class="logo-icon" onclick='location.href="/">
-</div>
+        <a href="/" class="logo">VC7Day</a>
         
         <form class="search-bar" action="/search" method="GET">
             <input type="text" name="q" placeholder="Buscar videos...">
@@ -3267,65 +3094,11 @@ body{padding:20px;}
                 font-size: 14px;
             }
         }
-        body{padding:20px;}
-        .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.logo-icon {
-    width: 32px;
-    height: 32px;
-}
-/* 3 LÍNEAS MÁXIMO PARA TEXTOS */
-
-/* Títulos de videos - 3 líneas */
-.video-title,
-.search-title,
-.related-title,
-.playlist-name {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    line-height: 1.3;
-    max-height: 3.9em; /* 3 líneas * 1.3 line-height */
-}
-
-/* Descripciones - 3 líneas */
-.video-description,
-.playlist-description,
-.description-text,
-.search-description {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    line-height: 1.4;
-    max-height: 4.2em; /* 3 líneas * 1.4 line-height */
-}
-
-/* Asegurar que el texto se rompa correctamente */
-.video-title,
-.search-title,
-.related-title,
-.playlist-name,
-.video-description,
-.playlist-description,
-.description-text,
-.search-description {
-    word-wrap: break-word;
-    word-break: break-word;
-    overflow-wrap: break-word;
-}
     </style>
 </head>
 <body>
     <header class="header">
-        <div class="logo">
-    <img src="{{ url_for('static', filename='favicon.ico') }}" alt="Logo" class="logo-icon" onclick='location.href="/"'>
-</div>
+        <a href="/" class="logo">VC7Day</a>
         
         <form class="search-bar" action="/search" method="GET">
             <input type="text" name="q" placeholder="Buscar videos..." value="{{ search_query }}">
@@ -3539,7 +3312,6 @@ body{padding:20px;}
         .back-link a:hover {
             color: white;
         }
-        body{padding:20px;}
     </style>
 </head>
 <body>
@@ -3788,7 +3560,6 @@ body{padding:20px;}
                 flex-direction: column;
             }
         }
-        body{padding:20px;}
     </style>
 </head>
 <body>
@@ -4083,7 +3854,6 @@ body{padding:20px;}
                 max-width: 100%;
             }
         }
-        body{padding:20px;}
     </style>
 </head>
 <body>
@@ -4374,7 +4144,6 @@ body{padding:20px;}
                 margin-bottom: 1rem;
             }
         }
-        body{padding:20px;}
     </style>
 </head>
 <body>
@@ -4821,7 +4590,6 @@ body{padding:20px;}
                 justify-content: space-between;
             }
         }
-        body{padding:20px;}
     </style>
 </head>
 <body>
@@ -5142,7 +4910,6 @@ body{padding:20px;}
                 gap: 1rem;
             }
         }
-        body{padding:20px;}
     </style>
 </head>
 <body>
@@ -5504,7 +5271,6 @@ body{padding:20px;}
                 justify-content: space-between;
             }
         }
-        body{padding:20px;}
     </style>
 </head>
 <body>
@@ -5895,7 +5661,6 @@ body{padding:20px;}
                 margin-bottom: 1rem;
             }
         }
-        body{padding:20px;}
     </style>
 </head>
 <body>
