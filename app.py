@@ -1696,6 +1696,47 @@ templates = {
                 grid-template-columns: 1fr;
             }
         }
+        /* 3 LÍNEAS MÁXIMO PARA TEXTOS */
+
+/* Títulos de videos - 3 líneas */
+.video-title,
+.search-title,
+.related-title,
+.playlist-name {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.3;
+    max-height: 3.9em; /* 3 líneas * 1.3 line-height */
+}
+
+/* Descripciones - 3 líneas */
+.video-description,
+.playlist-description,
+.description-text,
+.search-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.4;
+    max-height: 4.2em; /* 3 líneas * 1.4 line-height */
+}
+
+/* Asegurar que el texto se rompa correctamente */
+.video-title,
+.search-title,
+.related-title,
+.playlist-name,
+.video-description,
+.playlist-description,
+.description-text,
+.search-description {
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
     </style>
 </head>
 <body>
