@@ -1,0 +1,62 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Películas",
+      "icon": "🎬",
+      "created_at": "2025-11-19T07:44:43.564548"
+    },
+    {
+      "id": 2,
+      "name": "Seminarios",
+      "icon": "✍",
+      "created_at": "2025-11-19T15:14:57.108537"
+    },
+    {
+      "id": 3,
+      "name": "Musica",
+      "icon": "🎵",
+      "created_at": "2025-11-19T15:15:26.764592"
+    },
+    {
+      "id": 4,
+      "name": "Sermones",
+      "icon": "📢",
+      "created_at": "2025-11-19T15:22:04.014950"
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "title": "Nueva_IA_GRATUITA_de_Google_crea_VIDEOS_IMAGENES_y_APLICACIONES_SIN_PROGRAMAR_Opal",
+      "description": "Video DE muestra De ai",
+      "video_url": "http://neon.transfer.vpn/download/Nueva_IA_GRATUITA_de_Google_crea_VIDEOS_IMAGENES_y_APLICACIONES_SIN_PROGRAMAR_Opal.mp4",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAXgVLWwoWRajQvD5zJpM-ismmWoeNCXAtSg&s",
+      "category_id": 1,
+      "views": 26,
+      "likes": 3,
+      "created_at": "2025-11-19T15:01:40.669355",
+      "related_videos": [
+        1
+      ]
+    }
+  ],
+  "settings": {
+    "related_videos_count": 20,
+    "auto_related": true,
+    "default_related_strategy": "category"
+  },
+  "playlists": [
+    {
+      "id": 1,
+      "name": "Pastor Borh (Serie: Eventos de los ultimos Dias)",
+      "description": "un serie de sermones del pastor borh (Eventos de los ultimos Dias)",
+      "category_id": 4,
+      "videos": [
+        1
+      ],
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAXgVLWwoWRajQvD5zJpM-ismmWoeNCXAtSg&s",
+      "created_at": "2025-11-20T01:37:38.689637"
+    }
+  ]
+}
